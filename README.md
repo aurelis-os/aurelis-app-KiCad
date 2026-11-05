@@ -1,40 +1,25 @@
 <div align="center">
 
-# KiCad-AppImage 🐧
+# KiCad
 
-[![GitHub Downloads](https://img.shields.io/github/downloads/pkgforge-dev/KiCad-AppImage/total?logo=github&label=GitHub%20Downloads)](https://github.com/pkgforge-dev/KiCad-AppImage/releases/latest)
-[![CI Build Status](https://github.com/pkgforge-dev/KiCad-AppImage/actions/workflows/appimage.yml/badge.svg)](https://github.com/pkgforge-dev/KiCad-AppImage/releases/latest)
-[![Latest Stable Release](https://img.shields.io/github/v/release/pkgforge-dev/KiCad-AppImage)](https://github.com/pkgforge-dev/KiCad-AppImage/releases/latest)
-
-<p align="center">
-  <img src="https://gitlab.com/kicad/code/kicad/-/raw/master/resources/linux/icons/hicolor/128x128/apps/kicad.png" width="128" />
-</p>
-
-
-| Latest Stable Release | Upstream URL |
-| :---: | :---: |
-| [Click here](https://github.com/pkgforge-dev/KiCad-AppImage/releases/latest) | [Click here](https://gitlab.com/kicad/code/kicad) |
+![Version](https://img.shields.io/badge/version-9.0.0-blue)
+![Arch](https://img.shields.io/badge/arch-x86_64%20%7C%20aarch64-green)
+![License](https://img.shields.io/badge/license-GPL--3.0-orange)
 
 </div>
 
 ---
 
-AppImage made using [quick-sharun](https://github.com/pkgforge-dev/Anylinux-AppImages/blob/main/useful-tools/quick-sharun.sh), which makes it extremely easy to turn any binary into a portable package reliably without using containers or similar tricks. 
+## Description
 
-**This AppImage bundles everything and it should work on any Linux distro, including old and musl-based ones.**
-
-This AppImage doesn't require FUSE to run at all, thanks to the [uruntime](https://github.com/VHSgunzo/uruntime).
-
-This AppImage is also supplied with a self-updater by default, so any updates to this application won't be missed, you will be prompted for permission to check for updates and if agreed you will then be notified when a new update is available.
-
-Self-updater is disabled by default if AppImage managers like [am](https://github.com/ivan-hc/AM), [soar](https://github.com/pkgforge/soar) or [dbin](https://github.com/xplshn/dbin) exist, which manage AppImage updates.
-
-<details>
-  <summary><b><i>raison d'être</i></b></summary>
-    <img src="https://github.com/user-attachments/assets/d40067a6-37d2-4784-927c-2c7f7cc6104b" alt="Inspiration Image">
-  </a>
-</details>
+**KiCad** is a free and open-source Electronic Design Automation (EDA) suite for schematic capture, PCB layout, and circuit simulation. It provides a complete workflow for designing printed circuit boards, from schematic entry to manufacturing output.
 
 ---
 
-More at: [AnyLinux-AppImages](https://pkgforge-dev.github.io/Anylinux-AppImages/)
+## About This Package
+
+This is an **Aurelis Linux** package built as an AppImage. It can also run as a regular AppImage on any Linux distribution without installation.
+
+---
+
+Thanx to: [AnyLinux-AppImages](https://pkgforge-dev.github.io/Anylinux-AppImages/)

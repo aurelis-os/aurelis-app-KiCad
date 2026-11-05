@@ -6,8 +6,8 @@ ARCH=$(uname -m)
 VERSION=$(pacman -Q kicad | awk '{print $2; exit}') # example command to get version of application here
 export ARCH VERSION
 export OUTPATH=./dist
-export ADD_HOOKS="self-updater.hook"
-export UPINFO="gh-releases-zsync|${GITHUB_REPOSITORY%/*}|${GITHUB_REPOSITORY#*/}|latest|*$ARCH.AppImage.zsync"
+# export ADD_HOOKS="self-updater.hook"
+# export UPINFO="gh-releases-zsync|${GITHUB_REPOSITORY%/*}|${GITHUB_REPOSITORY#*/}|latest|*$ARCH.AppImage.zsync"
 export ICON=/usr/share/icons/hicolor/128x128/apps/kicad.png
 export DESKTOP=/usr/share/applications/org.kicad.kicad.desktop
 export DEPLOY_OPENGL=1
@@ -48,4 +48,6 @@ ln -s . ./AppDir/usr
 mv -fv ./AppDir/shared/bin/_* ./AppDir/bin
 
 # Turn AppDir into AppImage
-quick-sharun --make-appimage
+GITHUB_REPOSITORY= quick-sharun --make-appimage
+rm -f ./dist/*.zsync
+sh ./pkg-meta.sh
